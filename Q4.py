@@ -9,6 +9,8 @@ for i in data:
     
     if res == 0:
         res += i
+    elif i == 1:
+        res += i
     else:
         res = res * i 
 print(res)
