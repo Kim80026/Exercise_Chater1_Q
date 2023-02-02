@@ -8,11 +8,12 @@ ones = N % 10 #1의 자리값
 count = 0
 
 while 1:
-    N = tens + ones #새로운 수 만들기
+    N = tens + ones #더한값 수 만들기
     count += 1
     tens = ones #주어진 수 가장오른쪽 자리 수
-    ones = N % 10 #새로운 수 가장오른쪽 자리 수
-    if tens * 10 + ones == tmp:
+    ones = N % 10 #더한값 수 가장오른쪽 자리 수
+    res = tens * 10 + ones # 새로 만들어진 수
+    if res == tmp:
         break
     
 print(count)
